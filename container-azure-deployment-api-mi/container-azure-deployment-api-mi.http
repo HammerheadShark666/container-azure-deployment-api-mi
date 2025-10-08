@@ -1,0 +1,6 @@
+@container_azure_deployment_api_mi_HostAddress = http://localhost:5216
+
+GET {{container_azure_deployment_api_mi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
