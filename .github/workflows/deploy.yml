@@ -38,7 +38,7 @@ jobs:
       - name: Build and push image
         run: |
           IMAGE_TAG=${{ github.sha }}
-          docker build -t $AZURE_CONTAINER_REGISTRY_NAME.azurecr.io/$AZURE_CR_IMAGE_NAME:$IMAGE_TAG .
+          docker build -t $AZURE_CONTAINER_REGISTRY_NAME.azurecr.io/$AZURE_CR_IMAGE_NAME:$IMAGE_TAG ./container-azure-deployment-api-mi/container-azure-deployment-api-mi.csproj
           docker push $AZURE_CONTAINER_REGISTRY_NAME.azurecr.io/$AZURE_CR_IMAGE_NAME:$IMAGE_TAG
 
       - name: Deploy to Container App
