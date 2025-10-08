@@ -36,11 +36,11 @@ app.MapGet("/weatherforecast-mi", () =>
 .WithName("GetWeatherForecast")
 .WithOpenApi();
 
-app.MapGet("/health-mi", () => "Is Healthy")
+app.MapGet("/health-mi", () => "Is Healthy in Managed Identity")
 .WithName("health")
 .WithOpenApi();
 
-app.MapGet("/sunny-mi", () => "Is Sunny")
+app.MapGet("/sunny-mi", () => "Is Sunny in Managed Identity")
 .WithName("Is Sunny")
 .WithOpenApi();
 
