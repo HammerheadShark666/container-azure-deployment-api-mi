@@ -52,6 +52,10 @@ app.MapGet("/snowing-mi", () => "Is Snowing in Managed Identity")
 .WithName("Is Snowing")
 .WithOpenApi();
 
+app.MapGet("/windy-mi", () => "Is Windy in Managed Identity")
+.WithName("Is Windy")
+.WithOpenApi();
+
 app.Run();
 
 internal record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
